@@ -12,12 +12,12 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-18.04'
+  vmImage: 'ubuntu-latest'
 
 steps:
 - script: |
     python -m pip install -U --force-reinstall pip pip install azure-cli==2.29
-    displayName: 'Install dependencies'
+    displayName: 'Downgrade azure-cli prior to 1.30'
   
 - task: AzureCLI@2
   displayName: 'Install AML CLI'
