@@ -16,9 +16,9 @@ pool:
 
 steps:
 - script:
-    python -m pip install --upgrade pip
+    python -m pip install 
     pip install azure-cli==2.29 --force-reinstall
-  displayName: 'Install dependencies'
+  displayName: 'Downgrade azure-cli prior to 1.30'
 
 - task: AzureCLI@2
   displayName: 'Install AML CLI'
