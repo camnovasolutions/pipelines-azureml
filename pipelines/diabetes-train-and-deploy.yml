@@ -16,12 +16,12 @@ pool:
 
 steps:
 - task: AzureCLI@2
-  displayName: 'Install AML CLI (v2)'
+  displayName: 'Install AML CLI'
   inputs:
     azureSubscription: $(ml-ws-connection)
     scriptLocation: inlineScript
     scriptType: 'bash'
-    inlineScript: 'az extension add -n ml -y'
+    inlineScript: 'az extension add -n azure-cli-ml --version=1.33'
     
 - task: AzureCLI@2
   displayName: 'Attach folder to workspace'
