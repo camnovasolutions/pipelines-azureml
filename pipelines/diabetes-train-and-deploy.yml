@@ -12,9 +12,13 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'ubuntu-18.04'
 
 steps:
+- script: |
+    python -m pip install -U --force-reinstall pip pip install azure-cli==2.29
+    displayName: 'Install dependencies'
+  
 - task: AzureCLI@2
   displayName: 'Install AML CLI'
   inputs:
