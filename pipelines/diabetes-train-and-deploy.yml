@@ -16,7 +16,7 @@ pool:
 
 steps:
 - script:
-    python -m pip install 
+    python -m pip install
     pip install azure-cli==2.29 --force-reinstall
   displayName: 'Downgrade azure-cli prior to 1.30'
 
@@ -27,7 +27,7 @@ steps:
     scriptLocation: inlineScript
     scriptType: 'bash'
     inlineScript: 'az extension add -n azure-cli-ml'
-    
+
 - task: AzureCLI@2
   displayName: 'Attach folder to workspace'
   inputs:
@@ -45,7 +45,7 @@ steps:
     scriptLocation: inlineScript
     scriptType: 'bash'
     inlineScript: 'az ml computetarget create amlcompute -n $(ml-ct) --vm-size STANDARD_D2_V2 --max-nodes 1'
-  
+
 - task: AzureCLI@2
   displayName: 'Train model'
   inputs:
@@ -103,3 +103,4 @@ steps:
 #    scriptLocation: inlineScript
 #    scriptType: 'bash'
 #    inlineScript: 'az ml service delete -n diabetes-qa-aci'
+
