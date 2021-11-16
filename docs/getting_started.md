@@ -70,7 +70,7 @@ Next, let's point the new pipeline to an existing pipeline YAML in your GitHub r
 
 <img src="select_existing_pipeline.png" width="750px" />
 
-Lastly, we need to select from where the pipeline definition should come from. In this case, point it to `pipelines/diabetes-train-and-deploy.yml`:
+Lastly, we need to select from where the pipeline definition should come from. In this case, point it to `pipelines/shed-train-and-deploy.yml`:
 
 <img src="choose_pipeline_yaml.png" width="750px" />
 
