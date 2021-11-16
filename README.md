@@ -32,9 +32,9 @@ In case you want to leverage an existing ML workspace, you can customize it in t
  - ml-ws-connection: 'azmldemows'  # Workspace Service Connection name
  - ml-ws: 'aml-demo'               # AML Workspace name
  - ml-rg: 'aml-demo'               # AML resource Group name
- - ml-ct: 'cpu-cluster-1'          # AML Compute cluster name
+ - ml-ct: 'cpu-cluster-dev'          # AML Compute cluster name
  - ml-path: 'models/shed'      # Model directory path in repo
- - ml-exp: 'exp-test'              # Experiment name
+ - ml-exp: 'shed-test'              # Experiment name
  - ml-model-name: 'shed-model' # Model name
  - ml-aks-name: 'aks-prod'         # AKS cluster name
 ```

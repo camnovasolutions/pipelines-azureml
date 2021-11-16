@@ -8,7 +8,7 @@ env:
   ml-rg: aml-demo
   ml-ct: cpu-cluster-1
   ml-path: models/shed
-  ml-exp: exp-test
+  ml-exp: shed-test
   ml-model-name: shed-model # Model name
   ml-aks-name: aks-prod # AKS cluster name
   ml-model-path: outputs/ridge_0.90.pkl
